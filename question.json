@@ -1,0 +1,100 @@
+{
+    "quiz": {
+        "physics": [
+            {
+                "question": "1. The absorption of ink by blotting paper involves?",
+                "options": [
+                    "Viscosity of ink",
+                    "Capillary action phenomenon",
+                    "diffusion of ink through the blotting",
+                    "Siphon action"
+                ],
+                "answer": 1
+            },
+            {
+                "question": "2. Light year is a unit of ?",
+                "options": [
+                    "Time",
+                    "Distance",
+                    "Light",
+                    "Intensity of light"
+                ],
+                "answer": 1
+            },
+            {
+                "question": "3. Light from the Sun reaches us in nearly?",
+                "options": [
+                    "2 minutes",
+                    "4 minutes",
+                    "8 minutes",
+                    "16 minutes"
+                ],
+                "answer": 2
+            }
+        ],
+        "biology": [
+            {
+                "question": "1. Ozone hole refers to?",
+                "options": [
+                    "Hole in ozone layer",
+                    "Decrease in the ozone layer in troposphere",
+                    "Decrease in thickness of ozone layer in stratosphere",
+                    "Increase in the thickness of ozone layer in troposphere"
+                ],
+                "answer": 2
+            },
+            {
+                "question": "2. Pollination is best defined as?",
+                "options": [
+                    "Transfer of pollen from anther to stigma",
+                    "Germination of pollen grains",
+                    "Growth of pollen tube in ovule",
+                    "Visiting flowers by insects"
+                ],
+                "answer": 0
+            },
+            {
+                "question": " 3. Plants receive their nutrients mainly from?",
+                "options": [
+                    "Chlorophyll",
+                    "Atmosphere",
+                    "Light",
+                    "Soil"
+                ],
+                "answer": 3
+            }
+        ],
+        "chemistry": [
+            {
+                "question": "1. Which one is correct team name in NBA?",
+                "options": [
+                    "New York Bulls",
+                    "Los Angeles Kings",
+                    "Golden State Warriros",
+                    "Huston Rocket"
+                ],
+                "answer": 3
+            },
+            {
+                "question": "2. What is the capital of Lagos?",
+                "options": [
+                    "New York Bulls",
+                    "Ikeja",
+                    "Golden State Warriros",
+                    "Huston Rocket"
+                ],
+                "answer": 1
+            },
+            {
+                "question": "3. Where is the Biafra bunker located?",
+                "options": [
+                    "New York",
+                    "Imo",
+                    "Abia",
+                    "Abuja"
+                ],
+                "answer": 2
+            }
+        ]
+    }
+}
