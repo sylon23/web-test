@@ -11,19 +11,19 @@
 
 <body>
     <div class="container">
-        <h2>Welcome to your test center</h2>
+        <h2 class="header" id="title">Welcome to your test center</h2>
 
         <div id="details">
-            <form action="">
-                <input type="text" placeholder="Enter your name" id="userName" class="input">
+            <form name="login">
+                <p>Please enter your test details</p>
+                <input type="text" placeholder="Enter your name"  id="userName" class="input" autofocus name="fname"/>
                 <br>
-                <input type="text" placeholder="Enter your reg number" id="regNo" class="input">
+                <input type="text" placeholder="Enter your Identification number" id="regNo" class="input">
                 <br>
                 <select id="subject" class="input">
-                    <option value= "choose">Choose a question category</option>
-                    <option value= "physics">physics</option>
-                    <option value="chemistry">chemistry</option>
-                    <option value="biology">biology</option>
+                    <option value= "Physics">Physics</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Biology">Biology</option>
                 </select>
                 <br>
                 <!-- <button type="submit" id="submit">Take test</button> -->
@@ -32,11 +32,17 @@
             </form>
 
         </div>
-        <h3 id="question"></h3>
-        <ul id="options"></ul>
-        <button id="nextPage" class="hide">Next</button>
-        <button id="previousPage" class="hide">Back</button>
-        <h3 id= "notification"></h3>
+
+        <div id="main">
+            
+                    <h3 id="question"></h3>
+                    <ul id="options"></ul>
+                    <button id="nextPage" class="hide">Next</button>
+                    <button id="previousPage" class="hide">Back</button>
+                    <h3 id= "notification"></h3>
+           
+                
+        </div>
         
     </div>
     <script src="script.js"></script>

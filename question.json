@@ -1,6 +1,6 @@
 {
     "quiz": {
-        "physics": [
+        "Physics": [
             {
                 "question": "1. The absorption of ink by blotting paper involves?",
                 "options": [
@@ -30,9 +30,29 @@
                     "16 minutes"
                 ],
                 "answer": 2
+            },
+            {
+                "question": "4. It is more difficult to walk on a sandy road than on a concrete road because?",
+                "options": [
+                    "Sand is soft and concreter is hard",
+                    "The friction between sand and feet is less than that between concrete and feet",
+                    "Sand is grainy but concrete is smooth",
+                    "The friction between sand and feet is more than that between concrete and feet"
+                ],
+                "answer": 1
+            },
+            {
+                "question": "5. Inside an aeroplane, flying at a high altitude,",
+                "options": [
+                    "normal atmospheric pressure is maintained by the use of air pumps",
+                    "the pressure is the same as that outside",
+                    "the pressure inside is less than the pressure outside",
+                    "normal humidity and partial vacuum are maintained"
+                ],
+                "answer": 0
             }
         ],
-        "biology": [
+        "Biology": [
             {
                 "question": "1. Ozone hole refers to?",
                 "options": [
@@ -62,38 +82,78 @@
                     "Soil"
                 ],
                 "answer": 3
+            },
+            {
+                "question": "4. One of the following is not a function of bones.?",
+                "options": [
+                    "Place for muscle attachment",
+                    "Protection of vital organs",
+                    "Secretion of hormones for calcium regulation in blood and bones",
+                    "Production of blood corpuscles"
+                ],
+                "answer": 2
+            },
+            {
+                "question": "5. The most highly intelligent mammals after humans are?",
+                "options": [
+                    "Dolphins",
+                    "Whales",
+                    "Elephants",
+                    "Kangaroos"
+                ],
+                "answer": 0
             }
         ],
-        "chemistry": [
+        "Chemistry": [
             {
-                "question": "1. Which one is correct team name in NBA?",
+                "question": "1. The number of moles of solute present in 1 kg of a solvent is called its?",
                 "options": [
-                    "New York Bulls",
-                    "Los Angeles Kings",
-                    "Golden State Warriros",
-                    "Huston Rocket"
+                    "Molality",
+                    "Molarity",
+                    "Normality",
+                    "Formality"
+                ],
+                "answer": 0
+            },
+            {
+                "question": "2. The most commonly used bleaching agent is?",
+                "options": [
+                    "Alcohol",
+                    "Carbon dioxide",
+                    "Sodium chlorine",
+                    "Chlorine"
                 ],
                 "answer": 3
             },
             {
-                "question": "2. What is the capital of Lagos?",
+                "question": "3. The most abundant rare gas in the atmosphere is?",
                 "options": [
-                    "New York Bulls",
-                    "Ikeja",
-                    "Golden State Warriros",
-                    "Huston Rocket"
+                    "Xe",
+                    "Ar",
+                    "Ne",
+                    "He"
                 ],
                 "answer": 1
             },
             {
-                "question": "3. Where is the Biafra bunker located?",
+                "question": "4. The inherited traits of an organism are controlled by?",
                 "options": [
-                    "New York",
-                    "Imo",
-                    "Abia",
-                    "Abuja"
+                    "RNA molecules",
+                    "Nucleotides",
+                    "DNA molecules",
+                    "Enzymes"
                 ],
                 "answer": 2
+            },
+            {
+                "question": "5. The first metal used by man was?",
+                "options": [
+                    "Copper",
+                    "Gold",
+                    "Bronze",
+                    "Iron"
+                ],
+                "answer": 0
             }
         ]
     }
