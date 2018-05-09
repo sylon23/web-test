@@ -5,6 +5,7 @@ window.onload = function () {
   var name = "";
   var regNo = "";
   var subjectName = "";
+  var radioGroup = ""
   var x = 0; //A counter to navigate through each question in the json
 
   function loadJSON(callback) {
@@ -48,7 +49,6 @@ window.onload = function () {
       data = JSON.parse(response)
       test = data.quiz[subjectName];
       allQuestion = test.length;
-      console.log(allQuestion);
       var fullOptions = test[x].options.length;
       //Creating the radio buttons for each question dynamically
       for (var i = 0; i < fullOptions; i++) {
@@ -58,10 +58,10 @@ window.onload = function () {
         input.setAttribute("type", "radio");
         input.setAttribute("name", "options" + x)
         var radioOptions = document.createTextNode(test[x].options[i]);
-
         optionSpace.appendChild(list);
         list.appendChild(input);
         list.appendChild(radioOptions);
+        keepSelected();
       }
       //appending first question to the html doc
       document.getElementById("question").innerHTML = test[x].question;
@@ -71,12 +71,14 @@ window.onload = function () {
   //Checks if selected answer is correct and stores appropriate mark to sessionStorage
   function validateAnswer() {
     selected = false;
-    var radioGroup = document.getElementsByName("options" + x);
+    radioGroup = document.getElementsByName("options" + x);
     //checking and summing up correct answers
     for (var j = 0; j < radioGroup.length; j++) {
+
       if (radioGroup[j].checked) {
         selected = true;
-        radioGroup[j].checked = true;
+        sessionStorage.setItem("selected" + x, radioGroup[j].nextSibling.data)
+        
         if (j === test[x].answer) {
           sessionStorage.setItem("answer" + x, "1")
         } else {
@@ -107,14 +109,23 @@ window.onload = function () {
     }
     else {
       previous.style.display = "none";
+      var refreshButton = document.createElement("button");
+      refreshButton.innerHTML ="Dive Again" 
+      document.getElementById("main").append
 
       var candidate = sessionStorage.getItem("StudentName");
-      console.log(candidate)
       var category = sessionStorage.getItem("Subject");
       calculateTotal();
       document.getElementById("question").innerHTML = candidate + ", your total score is: " + totalScore + " / " + allQuestion + " in " + category;
       this.style.display = "none"
-
+      document.getElementById("main").appendChild(refreshButton)
+      sessionStorage.clear();
+      refreshButton.addEventListener("click", function(){
+        window.location.reload();
+      })
+        
+      
+      
     }
 
   })
@@ -141,9 +152,27 @@ window.onload = function () {
     }
     return totalScore;
   }
+  function keepSelected(){
+    var chosen =  sessionStorage.getItem("selected" + x)
+    for (var i = 0; i < optionSpace.children.length; i++){
+      if (optionSpace.children[i].textContent == chosen){
+        optionSpace.children[i].children[0].checked = true;
+      }
+    }
+   }
+   
+
+
+
+
 }
 
 
+
+
+
+
+ 
 
 
 
